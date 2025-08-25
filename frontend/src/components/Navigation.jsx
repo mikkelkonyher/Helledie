@@ -29,12 +29,12 @@ const Navigation = () => {
             to="/" 
             className="flex items-center gap-3 group"
           >
-            <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-indigo-600 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-              <div className="w-6 h-6 bg-gradient-to-br from-purple-300 to-indigo-400 rounded-full flex items-center justify-center">
-                <div className="text-black font-bold text-xs">DJ</div>
+            <div className="w-10 h-10 bg-gradient-to-br from-gray-900 to-black rounded border border-purple-400/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+              <div className="text-purple-300 font-light text-xs tracking-wider" style={{ fontFamily: 'serif' }}>
+                OLE
               </div>
             </div>
-            <span className="text-xl font-bold bg-gradient-to-r from-purple-400 to-indigo-400 bg-clip-text text-transparent hidden sm:block">
+            <span className="text-xl font-light bg-gradient-to-r from-purple-300 to-indigo-300 bg-clip-text text-transparent hidden sm:block tracking-wide" style={{ fontFamily: 'serif' }}>
               DJ Ole Helledie
             </span>
           </Link>
