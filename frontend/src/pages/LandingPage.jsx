@@ -54,9 +54,9 @@ const LandingPage = () => {
               <div className="absolute inset-4 bg-gradient-to-br from-gray-700 to-gray-800 rounded-xl shadow-inner p-6">
                 {/* DJ Logo */}
                 <div className="flex justify-center mb-4">
-                  <div className="w-16 h-16 bg-gradient-to-br from-indigo-600 to-purple-700 rounded-full shadow-lg flex items-center justify-center group-hover:shadow-indigo-500/30 transition-all duration-500">
-                    <div className="w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full flex items-center justify-center">
-                      <div className="text-white font-bold text-sm">DJ</div>
+                  <div className="w-16 h-16 bg-gradient-to-br from-gray-900 to-black rounded border border-indigo-400/40 shadow-2xl flex items-center justify-center group-hover:shadow-indigo-500/30 transition-all duration-500">
+                    <div className="text-indigo-300 font-light text-sm tracking-widest" style={{ fontFamily: 'serif' }}>
+                      OLE
                     </div>
                   </div>
                 </div>
