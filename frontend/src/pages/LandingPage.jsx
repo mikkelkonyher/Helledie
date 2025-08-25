@@ -5,8 +5,8 @@ import Footer from "../components/Footer";
 
 const LandingPage = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black flex flex-col">
-      <div className="flex-grow flex items-center justify-center p-4">
+    <div className="flex flex-col min-h-screen">
+      <div className="flex-grow bg-gradient-to-br from-gray-900 via-gray-800 to-black flex items-center justify-center p-4">
       {/* DJ Mixing Table Container */}
       <div className="w-full max-w-6xl mx-auto">
         {/* Desktop Layout */}
