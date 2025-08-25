@@ -126,7 +126,7 @@ const LandingPage = () => {
                 </div>
               </div>
               <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-center">
-                <p className="text-cyan-400 font-semibold">Mother's Art</p>
+                <p className="text-purple-400 font-semibold">Lene Helledie</p>
               </div>
             </Link>
           </div>
