@@ -13,7 +13,7 @@ const LandingPage = () => {
           <div className="relative group">
             <Link
               to="/mothers-art"
-              className="block relative w-80 h-80 rounded-full bg-gradient-to-br from-gray-800 to-gray-900 shadow-2xl transform transition-all duration-500 hover:scale-105 hover:shadow-cyan-400/20"
+              className="block relative w-80 h-80 rounded-full bg-gradient-to-br from-gray-800 to-gray-900 shadow-2xl transform transition-all duration-500 hover:scale-105 hover:shadow-purple-500/20"
             >
               {/* Turntable Base */}
               <div className="absolute inset-4 rounded-full bg-gradient-to-br from-gray-700 to-gray-800 shadow-inner">
