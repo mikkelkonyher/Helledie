@@ -154,7 +154,7 @@ const LandingPage = () => {
                   <img
                     src="https://picsum.photos/600/600?random=10"
                     alt="Lene Helledie"
-                    className="w-full h-full object-cover rounded-full group-hover:rotate-12 transition-all duration-700"
+                    className="w-full h-full object-cover rounded-full group-hover:animate-spin transition-all duration-1000"
                   />
                   <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-gray-900 rounded-full">
                     <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3 h-3 bg-purple-400 rounded-full animate-pulse"></div>
