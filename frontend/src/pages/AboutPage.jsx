@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { ArrowLeft, Music, Heart, Users } from "lucide-react";
 import Footer from "../components/Footer";
+import Navigation from "../components/Navigation";
 
 const AboutPage = () => {
   return (
