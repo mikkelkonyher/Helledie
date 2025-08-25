@@ -185,7 +185,7 @@ const LandingPage = () => {
 
         {/* Main Title */}
         <div className="text-center mt-16">
-          <h1 className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-cyan-400 via-lime-400 to-blue-400 bg-clip-text text-transparent mb-4">
+          <h1 className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-purple-400 via-indigo-400 to-purple-600 bg-clip-text text-transparent mb-4">
             DJ OLE HELLEDIE
           </h1>
           <p className="text-gray-400 text-lg md:text-xl">
