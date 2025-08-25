@@ -137,19 +137,14 @@ const LandingPage = () => {
               className="block relative w-48 h-64 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl shadow-2xl transform transition-all duration-500 hover:scale-105 hover:shadow-indigo-500/20"
             >
               <div className="absolute inset-4 bg-gradient-to-br from-gray-700 to-gray-800 rounded-xl shadow-inner p-4">
-                <img
-                  src="https://picsum.photos/400/400?random=12"
-                  alt="About"
-                  className="w-full h-20 object-cover rounded mb-4"
-                />
-                <div className="grid grid-cols-3 gap-2 mb-3">
-                  {[...Array(6)].map((_, i) => (
-                    <div key={i} className="w-6 h-6 bg-gray-600 rounded-full group-hover:bg-lime-400 transition-colors"></div>
-                  ))}
+                <div className="flex items-center justify-center h-full">
+                  <div className="w-16 h-16 bg-gradient-to-br from-indigo-600 to-purple-700 rounded-full shadow-lg flex items-center justify-center">
+                    <div className="text-white font-bold text-sm">DJ</div>
+                  </div>
                 </div>
               </div>
               <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-center">
-                <p className="text-lime-400 font-semibold">About</p>
+                <p className="text-indigo-400 font-semibold">About</p>
               </div>
             </Link>
           </div>
