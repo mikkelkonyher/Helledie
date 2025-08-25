@@ -1,158 +1,142 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { ArrowLeft, ExternalLink } from "lucide-react";
 import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
 
+const featureImages = [
+    {
+        src: "/assets/ole/278856634_2242627119208749_8480187824424237634_n.jpg",
+        alt: "DJ Performance",
+        className: "object-top"
+    },
+    {
+        src: "/assets/ole/480952256_3076331369171649_5175806130906190233_n.jpg",
+        alt: "events",
+        className: ""
+    },
+    {
+        src: "/assets/ole/B76E835B-6FF0-43DD-AF91-F1A412827003.JPG",
+        alt: "Collaboration",
+        className: ""
+    }
+];
+
 const AboutPage = () => {
-  return (
-    <div className="flex flex-col min-h-screen">
-      <Navigation />
-      <div className="flex-grow bg-gradient-to-br from-gray-900 via-gray-800 to-black">
-      {/* Navigation */}
-      <nav className="p-6">
-        <Link
-          to="/"
-          className="inline-flex items-center gap-2 text-indigo-400 hover:text-indigo-300 transition-colors duration-300"
-        >
-          <ArrowLeft className="w-5 h-5" />
-          Back to DJ Table
-        </Link>
-      </nav>
+    const [modalImg, setModalImg] = useState(null);
 
-      {/* Hero Banner */}
-      <div className="relative h-96 mb-16 overflow-hidden">
-        <img
-          src="/assets/ole/480952256_3076331369171649_5175806130906190233_n.jpg"
-          alt="DJ Ole Helledie Hero"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/70"></div>
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="text-center">
-            <h1 className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-purple-400 via-indigo-400 to-purple-600 bg-clip-text text-transparent mb-4">
-              DJ OLE HELLEDIE
-            </h1>
-            <p className="text-gray-300 text-xl md:text-2xl">
-              Connecting Generations Through Music & Art
-            </p>
-          </div>
+    return (
+        <div className="flex flex-col min-h-screen">
+            <Navigation />
+            <div className="flex-grow bg-gradient-to-br from-gray-900 via-gray-800 to-black">
+                {/* Navigation */}
+                <nav className="p-6">
+                    <Link
+                        to="/"
+                        className="inline-flex items-center gap-2 text-indigo-400 hover:text-indigo-300 transition-colors duration-300"
+                    >
+                        <ArrowLeft className="w-5 h-5" />
+                        Back to DJ Table
+                    </Link>
+                </nav>
+
+                {/* Hero Banner */}
+                <div className="relative h-96 mb-16 overflow-hidden">
+                    <img
+                        src="/assets/ole/480952256_3076331369171649_5175806130906190233_n.jpg"
+                        alt="DJ Ole Helledie Hero"
+                        className="w-full h-full object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/70"></div>
+                    <div className="absolute inset-0 flex items-center justify-center">
+                        <div className="text-center">
+                            <h1 className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-purple-400 via-indigo-400 to-purple-600 bg-clip-text text-transparent mb-4">
+                                DJ OLE HELLEDIE
+                            </h1>
+                            <p className="text-gray-300 text-xl md:text-2xl">
+                                Forbinder generationer gennem musik og kunst
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Biography Content */}
+                <div className="max-w-4xl mx-auto px-6 pb-16">
+                    {/* Main Story */}
+                    <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-2xl p-8 md:p-12 backdrop-blur-sm shadow-2xl mb-12">
+                        <h2 className="text-3xl md:text-4xl font-bold text-indigo-400 mb-6">Historien bag musikken</h2>
+                        <div className="prose prose-lg text-gray-300 max-w-none">
+                            <p className="mb-6 leading-relaxed">
+                                Ole Helledie er den DJ, du får, når du blander en kunstnerisk mor, en DJ-datter og en flok Mercantec-elever, der konstant presser ham til at være bedre. Resultatet? Musik, events og historier, der ikke altid giver mening – men som altid får folk til at danse.
+                            </p>
+                            <p className="mb-6 leading-relaxed">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, urna eu tincidunt consectetur, nisi nisl aliquam eros, vitae dictum enim sapien nec enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                            </p>
+                            <p className="mb-6 leading-relaxed">
+                                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer ac sem euismod, dictum erat at, cursus enim. Suspendisse potenti. Etiam euismod, justo nec facilisis cursus, enim erat dictum urna, nec dictum enim sapien nec enim.
+                            </p>
+                            <p className="leading-relaxed">
+                                Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Feature Images */}
+                    <div className="grid md:grid-cols-3 gap-8 mb-16">
+                        {featureImages.map((img, i) => (
+                            <div
+                                key={i}
+                                className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-2xl overflow-hidden backdrop-blur-sm shadow-2xl h-64 w-full cursor-pointer"
+                                onClick={() => setModalImg(img.src)}
+                            >
+                                <img
+                                    src={img.src}
+                                    alt={img.alt}
+                                    className={`w-full h-full object-cover ${img.className} transition-transform duration-700 hover:scale-110`}
+                                />
+                            </div>
+                        ))}
+                    </div>
+                    {/* Modal for full-screen image */}
+                    {modalImg && (
+                        <div
+                            className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 cursor-pointer"
+                            onClick={() => setModalImg(null)}
+                        >
+                            <img src={modalImg} alt="" className="max-w-full max-h-full rounded-2xl shadow-2xl" />
+                        </div>
+                    )}
+
+                    {/* Event Booking Section */}
+                    <div className="bg-gradient-to-r from-purple-600/20 to-indigo-600/20 rounded-2xl p-8 backdrop-blur-sm border border-purple-500/30 text-center mb-12">
+                        <h3 className="text-2xl font-semibold text-purple-300 mb-4">Book DJ Ole Helledie til dit næste event</h3>
+                        <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
+                            Fra intime gallerier til store festivaler – få den unikke lyd, der forbinder generationer, med til din næste fest.
+                        </p>
+                        <a
+                            href="https://example.com/booking"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-semibold px-8 py-4 rounded-full transform transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-purple-500/30"
+                        >
+                            Besøg bookingsiden
+                            <ExternalLink className="w-5 h-5" />
+                        </a>
+                    </div>
+
+                    {/* Quote Section */}
+                    <div className="text-center mt-16 p-8 bg-gradient-to-r from-gray-800/30 to-gray-700/30 rounded-2xl backdrop-blur-sm">
+                        <blockquote className="text-2xl md:text-3xl font-light text-gray-300 italic mb-4">
+                            "Hvis du spørger mig, hvem der holder festen kørende… så er svaret Mercantec-eleverne."
+                        </blockquote>
+                        <cite className="text-indigo-400 font-semibold">– DJ Ole Helledie</cite>
+                    </div>
+                </div>
+
+                <Footer />
+            </div>
         </div>
-      </div>
-
-      {/* Biography Content */}
-      <div className="max-w-4xl mx-auto px-6 pb-16">
-        {/* Main Story */}
-        <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-2xl p-8 md:p-12 backdrop-blur-sm shadow-2xl mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-indigo-400 mb-6">The Story Behind the Music</h2>
-          <div className="prose prose-lg text-gray-300 max-w-none">
-            <p className="mb-6 leading-relaxed">
-              DJ Ole Helledie is more than just a name in the music industry – he's a bridge between generations, 
-              connecting the artistic legacy of his mother with the vibrant energy of his daughter's musical journey. 
-              With over two decades of experience behind the turntables, Ole has carved out a unique space in the 
-              electronic music scene.
-            </p>
-            <p className="mb-6 leading-relaxed">
-              Born into a family where creativity flows like electricity through every generation, Ole discovered 
-              his passion for mixing beats and creating atmospheric soundscapes at an early age. His mother's 
-              artistic vision and his daughter's fresh perspective on modern DJ culture have profoundly influenced 
-              his musical style, creating a signature sound that resonates across age groups.
-            </p>
-            <p className="mb-6 leading-relaxed">
-              From intimate underground venues to major festival stages, DJ Ole Helledie has consistently delivered 
-              performances that not only move the body but touch the soul. His sets are known for their emotional 
-              depth, technical precision, and the seamless way they weave together different musical eras and genres.
-            </p>
-            <p className="leading-relaxed">
-              Today, Ole continues to push the boundaries of electronic music while honoring the artistic traditions 
-              that shaped him. His work serves as a testament to the power of family, creativity, and the unifying 
-              force of music in bringing people together across generations.
-            </p>
-          </div>
-        </div>
-
-        {/* Feature Images */}
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
-          <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-2xl overflow-hidden backdrop-blur-sm shadow-2xl transform transition-all duration-300 hover:scale-105 hover:shadow-purple-500/20">
-            <div className="aspect-video overflow-hidden">
-                <img
-                    src="/assets/ole/278856634_2242627119208749_8480187824424237634_n.jpg"
-                    alt="DJ Performance"
-                    className="w-full h-full object-cover object-top transition-transform duration-700 hover:scale-110"
-                />
-            </div>
-            <div className="p-6">
-              <h3 className="text-purple-400 font-semibold text-xl mb-3">Live Performances</h3>
-              <p className="text-gray-400">
-                Captivating audiences across major venues and festivals with electrifying DJ sets.
-              </p>
-            </div>
-          </div>
-
-          <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-2xl overflow-hidden backdrop-blur-sm shadow-2xl transform transition-all duration-300 hover:scale-105 hover:shadow-indigo-500/20">
-            <div className="aspect-video overflow-hidden">
-              <img
-                src="/assets/ole/480952256_3076331369171649_5175806130906190233_n.jpg"
-                alt="events"
-                className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-indigo-400 font-semibold text-xl mb-3">Events</h3>
-              <p className="text-gray-400">
-                Creating unique soundscapes and remixes that blend artistic vision with musical innovation.
-              </p>
-            </div>
-          </div>
-
-          <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-2xl overflow-hidden backdrop-blur-sm shadow-2xl transform transition-all duration-300 hover:scale-105 hover:shadow-purple-600/20">
-            <div className="aspect-video overflow-hidden">
-              <img
-                src="https://picsum.photos/600/400?random=22"
-                alt="Collaboration"
-                className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-purple-400 font-semibold text-xl mb-3">Artistic Collaborations</h3>
-              <p className="text-gray-400">
-                Bridging generations through collaborative works with Lene Helledie and emerging artists.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Event Booking Section */}
-        <div className="bg-gradient-to-r from-purple-600/20 to-indigo-600/20 rounded-2xl p-8 backdrop-blur-sm border border-purple-500/30 text-center mb-12">
-          <h3 className="text-2xl font-semibold text-purple-300 mb-4">Book DJ Ole Helledie for Your Event</h3>
-          <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-            From intimate gallery openings to major festival stages, bring the unique sound that connects generations to your next event.
-          </p>
-          <a
-            href="https://example.com/booking"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-semibold px-8 py-4 rounded-full transform transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-purple-500/30"
-          >
-            Visit Booking Site
-            <ExternalLink className="w-5 h-5" />
-          </a>
-        </div>
-
-        {/* Quote Section */}
-        <div className="text-center mt-16 p-8 bg-gradient-to-r from-gray-800/30 to-gray-700/30 rounded-2xl backdrop-blur-sm">
-          <blockquote className="text-2xl md:text-3xl font-light text-gray-300 italic mb-4">
-            "Music is the language that connects us all – past, present, and future. Every beat I drop carries 
-            the artistic soul of Lene and the innovative spirit of my daughter."
-          </blockquote>
-          <cite className="text-indigo-400 font-semibold">– DJ Ole Helledie</cite>
-        </div>
-      </div>
-
-      <Footer />
-      </div>
-    </div>
-  );
+    );
 };
 
 export default AboutPage;

@@ -41,7 +41,7 @@ const Footer = () => {
               DJ Ole Helledie
             </h3>
             <p className="text-gray-400 text-sm">
-              Connecting Generations Through Music & Art
+                Forbinder generationer gennem musik og kunst
             </p>
           </div>
 
