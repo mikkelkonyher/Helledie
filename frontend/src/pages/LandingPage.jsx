@@ -30,7 +30,7 @@ const LandingPage = () => {
                   </div>
                 </div>
                 {/* Glow Effect */}
-                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-cyan-400/0 via-cyan-400/20 to-cyan-400/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-500/0 via-purple-500/20 to-purple-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
               {/* Label */}
               <div className="absolute -bottom-12 left-1/2 transform -translate-x-1/2 text-center">
