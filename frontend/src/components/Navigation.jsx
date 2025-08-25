@@ -23,23 +23,21 @@ const Navigation = () => {
         <nav className="bg-black/80 backdrop-blur-md border-b border-gray-800 sticky top-0 z-50">
             <div className="max-w-6xl mx-auto px-6">
                 <div className="flex items-center justify-between h-16">
-                    {/* Logo */}
-                    <Link
-                        to="/"
-                        className="flex items-center gap-3 group"
-                    >
-                        <div className="w-10 h-10 bg-gradient-to-br from-gray-900 to-black rounded border border-purple-400/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                            <div className="text-purple-300 font-light text-xs tracking-wider" style={{ fontFamily: 'serif' }}>
-                                DJ
-                            </div>
-                        </div>
-                        <span className="text-xl font-light bg-gradient-to-r from-purple-300 to-indigo-300 bg-clip-text text-transparent tracking-wide" style={{ fontFamily: 'serif' }}>
-              Ole Helledie
-            </span>
-                    </Link>
+                    {/* Logo - left */}
+                    <div className="flex-shrink-0">
+                        <Link
+                            to="/"
+                            className="flex items-center gap-3 group"
+                        >
 
-                    {/* Desktop Navigation */}
-                    <div className="hidden md:flex items-center gap-8">
+                            <span className="text-xl font-light bg-gradient-to-r from-purple-300 to-indigo-300 bg-clip-text text-transparent tracking-wide" style={{ fontFamily: 'serif' }}>
+
+                            </span>
+                        </Link>
+                    </div>
+
+                    {/* Desktop Navigation - centered */}
+                    <div className="hidden md:flex flex-1 justify-center items-center gap-8">
                         {navigationItems.map((item) => (
                             item.internal ? (
                                 <Link
@@ -68,7 +66,7 @@ const Navigation = () => {
                         ))}
                     </div>
 
-                    {/* Mobile Menu Button */}
+                    {/* Mobile Menu Button - right */}
                     <button
                         onClick={() => setIsMenuOpen(!isMenuOpen)}
                         className="md:hidden p-2 text-gray-300 hover:text-purple-400 transition-colors duration-300"
