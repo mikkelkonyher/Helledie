@@ -6,12 +6,12 @@ import Navigation from "../components/Navigation";
 
 const MotherArtPage = () => {
   const artPieces = [
-    { id: 1, image: "https://picsum.photos/400/400?random=1", title: "Abstract Harmony" },
-    { id: 2, image: "https://picsum.photos/400/400?random=2", title: "Digital Dreams" },
-    { id: 3, image: "https://picsum.photos/400/400?random=3", title: "Color Symphony" },
-    { id: 4, image: "https://picsum.photos/400/400?random=4", title: "Modern Expression" },
-    { id: 5, image: "https://picsum.photos/400/400?random=5", title: "Vibrant Vision" },
-    { id: 6, image: "https://picsum.photos/400/400?random=6", title: "Creative Flow" },
+    { id: 1, image: "https://lene.helledie.dk/wp-content/uploads/2020/08/fra-Galleri-Grenen-1l.jpg", title: "Abstract Harmony" },
+    { id: 2, image: "https://lene.helledie.dk/wp-content/uploads/2025/04/akryl-05.jpg", title: "Digital Dreams" },
+    { id: 3, image: "https://lene.helledie.dk/wp-content/uploads/2025/04/akryl-03.jpg", title: "Color Symphony" },
+    { id: 4, image: "https://lene.helledie.dk/wp-content/uploads/2025/04/papir-08.jpg", title: "Modern Expression" },
+    { id: 5, image: "https://lene.helledie.dk/wp-content/uploads/2025/04/papir-10.jpg", title: "Vibrant Vision" },
+    { id: 6, image: "https://lene.helledie.dk/wp-content/uploads/2025/04/akryl-03.jpg", title: "Creative Flow" },
   ];
 
   return (
@@ -32,11 +32,11 @@ const MotherArtPage = () => {
       {/* Header */}
       <div className="text-center py-12 px-4">
         <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-purple-400 via-indigo-400 to-purple-600 bg-clip-text text-transparent mb-4">
-          Lene Helledie Art Gallery
+          Lene Helledie Kunst
         </h1>
         <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto">
-          Explore the beautiful artistic creations and masterpieces from Lene Helledie.
-          Each piece tells a unique story through color, form, and emotion.
+            At tage kampen op med den skønhed og kraft naturen har,
+            er en vovet affære, men det er umuligt at lade være.
         </p>
       </div>
 
@@ -49,7 +49,7 @@ const MotherArtPage = () => {
               className="group relative bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl shadow-2xl overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-purple-500/20"
             >
               <a
-                href="https://example.com/mother-art"
+                href="https://lene.helledie.dk/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block relative"
@@ -74,7 +74,8 @@ const MotherArtPage = () => {
                   {/* Title Overlay */}
                   <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
                     <h3 className="text-white font-semibold text-xl mb-2">{piece.title}</h3>
-                    <p className="text-gray-300 text-sm">Click to view full artwork</p>
+                    <p className="text-gray-300 text-sm">Lene Helledie</p>
+
                   </div>
                 </div>
 
@@ -88,12 +89,12 @@ const MotherArtPage = () => {
         {/* Visit Gallery CTA */}
         <div className="text-center mt-16">
           <a
-            href="https://example.com/mother-art"
+            href="https://lene.helledie.dk/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-semibold px-8 py-4 rounded-full transform transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-purple-500/30"
           >
-            Visit Full Gallery
+              Lene Helledie Kunstside
             <ExternalLink className="w-5 h-5" />
           </a>
         </div>

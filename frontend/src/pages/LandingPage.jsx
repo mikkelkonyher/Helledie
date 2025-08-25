@@ -24,7 +24,7 @@ const LandingPage = () => {
                 {/* Vinyl Record */}
                 <div className="absolute inset-4 rounded-full overflow-hidden">
                   <img
-                    src="https://picsum.photos/600/600?random=10"
+                    src="/assets/Lene/Lene3 kopier.jpeg"
                     alt="Lene Helledie Turntable"
                     className="w-full h-full object-cover rounded-full group-hover:animate-spin transition-all duration-1000"
                   />
@@ -39,7 +39,7 @@ const LandingPage = () => {
               {/* Label */}
               <div className="absolute -bottom-12 left-1/2 transform -translate-x-1/2 text-center">
                 <p className="text-purple-400 font-semibold text-lg">Lene Helledie</p>
-                <p className="text-gray-400 text-sm">Art Gallery</p>
+                <p className="text-gray-400 text-sm">Kunst</p>
               </div>
             </Link>
           </div>
@@ -56,7 +56,7 @@ const LandingPage = () => {
                 <div className="flex justify-center mb-4">
                   <div className="w-16 h-16 bg-gradient-to-br from-gray-900 to-black rounded border border-indigo-400/40 shadow-2xl flex items-center justify-center group-hover:shadow-indigo-500/30 transition-all duration-500">
                     <div className="text-indigo-300 font-light text-sm tracking-widest" style={{ fontFamily: 'serif' }}>
-                      OLE
+                     Helledie
                     </div>
                   </div>
                 </div>
@@ -97,7 +97,7 @@ const LandingPage = () => {
               </div>
               {/* Label */}
               <div className="absolute -bottom-12 left-1/2 transform -translate-x-1/2 text-center">
-                <p className="text-indigo-400 font-semibold text-lg">About</p>
+                <p className="text-indigo-400 font-semibold text-lg">Om</p>
                 <p className="text-gray-400 text-sm">DJ Ole Helledie</p>
               </div>
             </Link>
@@ -116,7 +116,7 @@ const LandingPage = () => {
                 {/* Vinyl Record */}
                 <div className="absolute inset-4 rounded-full overflow-hidden">
                   <img
-                    src="https://picsum.photos/600/600?random=11"
+                    src="/assets/Daughter/QaRZik6JLn8.jpg"
                     alt="Daughter's DJ Turntable"
                     className="w-full h-full object-cover rounded-full group-hover:animate-spin transition-all duration-1000"
                   />
@@ -134,7 +134,7 @@ const LandingPage = () => {
               </div>
               {/* Label */}
               <div className="absolute -bottom-12 left-1/2 transform -translate-x-1/2 text-center">
-                <p className="text-indigo-400 font-semibold text-lg">Daughter's DJ</p>
+                <p className="text-indigo-400 font-semibold text-lg">DJ Helledie Junior</p>
                 <p className="text-gray-400 text-sm">External Site</p>
               </div>
             </a>
@@ -152,7 +152,7 @@ const LandingPage = () => {
               <div className="absolute inset-4 rounded-full bg-gradient-to-br from-gray-700 to-gray-800 shadow-inner">
                 <div className="absolute inset-4 rounded-full overflow-hidden">
                   <img
-                    src="https://picsum.photos/600/600?random=10"
+                    src="/assets/Lene/Lene3 kopier.jpeg"
                     alt="Lene Helledie"
                     className="w-full h-full object-cover rounded-full group-hover:animate-spin transition-all duration-1000"
                   />
@@ -199,7 +199,7 @@ const LandingPage = () => {
                 </div>
               </div>
               <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-center">
-                <p className="text-indigo-400 font-semibold">About</p>
+                <p className="text-indigo-400 font-semibold">Om</p>
               </div>
             </Link>
           </div>
@@ -239,7 +239,7 @@ const LandingPage = () => {
             DJ OLE HELLEDIE
           </h1>
           <p className="text-gray-400 text-lg md:text-xl">
-            Experience the Music • Explore the Art • Discover the Story
+              DJ • Kunst • Events
           </p>
         </div>
       </div>

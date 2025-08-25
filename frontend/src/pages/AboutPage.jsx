@@ -23,7 +23,7 @@ const AboutPage = () => {
       {/* Hero Banner */}
       <div className="relative h-96 mb-16 overflow-hidden">
         <img
-          src="https://picsum.photos/1200/400?random=7"
+          src="/assets/ole/480952256_3076331369171649_5175806130906190233_n.jpg"
           alt="DJ Ole Helledie Hero"
           className="w-full h-full object-cover"
         />
@@ -75,11 +75,11 @@ const AboutPage = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-2xl overflow-hidden backdrop-blur-sm shadow-2xl transform transition-all duration-300 hover:scale-105 hover:shadow-purple-500/20">
             <div className="aspect-video overflow-hidden">
-              <img
-                src="https://picsum.photos/600/400?random=20"
-                alt="DJ Performance"
-                className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
-              />
+                <img
+                    src="/assets/ole/278856634_2242627119208749_8480187824424237634_n.jpg"
+                    alt="DJ Performance"
+                    className="w-full h-full object-cover object-top transition-transform duration-700 hover:scale-110"
+                />
             </div>
             <div className="p-6">
               <h3 className="text-purple-400 font-semibold text-xl mb-3">Live Performances</h3>
@@ -92,13 +92,13 @@ const AboutPage = () => {
           <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-2xl overflow-hidden backdrop-blur-sm shadow-2xl transform transition-all duration-300 hover:scale-105 hover:shadow-indigo-500/20">
             <div className="aspect-video overflow-hidden">
               <img
-                src="https://picsum.photos/600/400?random=21"
-                alt="Studio Work"
+                src="/assets/ole/480952256_3076331369171649_5175806130906190233_n.jpg"
+                alt="events"
                 className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
               />
             </div>
             <div className="p-6">
-              <h3 className="text-indigo-400 font-semibold text-xl mb-3">Studio Sessions</h3>
+              <h3 className="text-indigo-400 font-semibold text-xl mb-3">Events</h3>
               <p className="text-gray-400">
                 Creating unique soundscapes and remixes that blend artistic vision with musical innovation.
               </p>

@@ -7,10 +7,11 @@ const Navigation = () => {
   const location = useLocation();
 
   const navigationItems = [
-    { name: "Home", path: "/", internal: true },
+    { name: "Forside", path: "/", internal: true },
+      { name: "Om", path: "/about", internal: true },
     { name: "Lene Helledie", path: "/mothers-art", internal: true },
-    { name: "About", path: "/about", internal: true },
-    { name: "Daughter's DJ", path: "https://example.com/daughter-dj", internal: false }
+
+    { name: "DJ Junior", path: "https://example.com/daughter-dj", internal: false }
   ];
 
   const isActive = (path) => {
@@ -31,11 +32,11 @@ const Navigation = () => {
           >
             <div className="w-10 h-10 bg-gradient-to-br from-gray-900 to-black rounded border border-purple-400/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
               <div className="text-purple-300 font-light text-xs tracking-wider" style={{ fontFamily: 'serif' }}>
-                OLE
+                DJ
               </div>
             </div>
             <span className="text-xl font-light bg-gradient-to-r from-purple-300 to-indigo-300 bg-clip-text text-transparent hidden sm:block tracking-wide" style={{ fontFamily: 'serif' }}>
-              DJ Ole Helledie
+              Ole Helledie
             </span>
           </Link>
 
