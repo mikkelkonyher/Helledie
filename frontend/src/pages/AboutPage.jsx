@@ -26,7 +26,7 @@ const AboutPage = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/70"></div>
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center">
-            <h1 className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-lime-400 via-cyan-400 to-blue-400 bg-clip-text text-transparent mb-4">
+            <h1 className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-purple-400 via-indigo-400 to-purple-600 bg-clip-text text-transparent mb-4">
               DJ OLE HELLEDIE
             </h1>
             <p className="text-gray-300 text-xl md:text-2xl">
