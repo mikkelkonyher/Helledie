@@ -73,7 +73,7 @@ const LandingPage = () => {
               href="https://example.com/daughter-dj"
               target="_blank"
               rel="noopener noreferrer"
-              className="block relative w-80 h-80 rounded-full bg-gradient-to-br from-gray-800 to-gray-900 shadow-2xl transform transition-all duration-500 hover:scale-105 hover:shadow-blue-400/20"
+              className="block relative w-80 h-80 rounded-full bg-gradient-to-br from-gray-800 to-gray-900 shadow-2xl transform transition-all duration-500 hover:scale-105 hover:shadow-indigo-500/20"
             >
               {/* Turntable Base */}
               <div className="absolute inset-4 rounded-full bg-gradient-to-br from-gray-700 to-gray-800 shadow-inner">
