@@ -90,7 +90,7 @@ const LandingPage = () => {
                   </div>
                 </div>
                 {/* Glow Effect */}
-                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-400/0 via-blue-400/20 to-blue-400/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-indigo-500/0 via-indigo-500/20 to-indigo-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
               {/* External Link Icon */}
               <div className="absolute top-4 right-4">
