@@ -190,6 +190,7 @@ const LandingPage = () => {
           </p>
         </div>
       </div>
+    </div>
       
       <Footer />
     </div>
