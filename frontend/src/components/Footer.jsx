@@ -30,7 +30,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gradient-to-t from-black to-gray-900 border-t border-gray-800 py-8 mt-16">
+    <footer className="bg-gradient-to-t from-black to-gray-900 border-t border-gray-800 py-8 mt-auto">
       <div className="max-w-6xl mx-auto px-6">
         {/* Main Footer Content */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
