@@ -69,11 +69,11 @@ const AboutPage = () => {
 
         {/* Feature Cards */}
         <div className="grid md:grid-cols-3 gap-8">
-          <div className="bg-gradient-to-br from-cyan-500/20 to-cyan-600/10 rounded-xl p-6 backdrop-blur-sm border border-cyan-500/20 transform transition-all duration-300 hover:scale-105 hover:shadow-cyan-400/20">
-            <div className="w-12 h-12 bg-cyan-400 rounded-full flex items-center justify-center mb-4">
-              <Music className="w-6 h-6 text-black" />
+          <div className="bg-gradient-to-br from-purple-500/20 to-purple-600/10 rounded-xl p-6 backdrop-blur-sm border border-purple-500/20 transform transition-all duration-300 hover:scale-105 hover:shadow-purple-500/20">
+            <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mb-4">
+              <Music className="w-6 h-6 text-white" />
             </div>
-            <h3 className="text-cyan-400 font-semibold text-xl mb-3">Musical Legacy</h3>
+            <h3 className="text-purple-400 font-semibold text-xl mb-3">Musical Legacy</h3>
             <p className="text-gray-400">
               Over 20 years of crafting unforgettable musical experiences and pushing the boundaries of electronic music.
             </p>
