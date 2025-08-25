@@ -71,37 +71,72 @@ const AboutPage = () => {
           </div>
         </div>
 
-        {/* Feature Cards */}
-        <div className="grid md:grid-cols-3 gap-8">
-          <div className="bg-gradient-to-br from-purple-500/20 to-purple-600/10 rounded-xl p-6 backdrop-blur-sm border border-purple-500/20 transform transition-all duration-300 hover:scale-105 hover:shadow-purple-500/20">
-            <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center mb-4">
-              <Music className="w-6 h-6 text-white" />
+        {/* Feature Images */}
+        <div className="grid md:grid-cols-3 gap-8 mb-16">
+          <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-2xl overflow-hidden backdrop-blur-sm shadow-2xl transform transition-all duration-300 hover:scale-105 hover:shadow-purple-500/20">
+            <div className="aspect-video overflow-hidden">
+              <img
+                src="https://picsum.photos/600/400?random=20"
+                alt="DJ Performance"
+                className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
+              />
             </div>
-            <h3 className="text-purple-400 font-semibold text-xl mb-3">Musical Legacy</h3>
-            <p className="text-gray-400">
-              Over 20 years of crafting unforgettable musical experiences and pushing the boundaries of electronic music.
-            </p>
+            <div className="p-6">
+              <h3 className="text-purple-400 font-semibold text-xl mb-3">Live Performances</h3>
+              <p className="text-gray-400">
+                Captivating audiences across major venues and festivals with electrifying DJ sets.
+              </p>
+            </div>
           </div>
 
-          <div className="bg-gradient-to-br from-indigo-500/20 to-indigo-600/10 rounded-xl p-6 backdrop-blur-sm border border-indigo-500/20 transform transition-all duration-300 hover:scale-105 hover:shadow-indigo-500/20">
-            <div className="w-12 h-12 bg-indigo-500 rounded-full flex items-center justify-center mb-4">
-              <Heart className="w-6 h-6 text-white" />
+          <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-2xl overflow-hidden backdrop-blur-sm shadow-2xl transform transition-all duration-300 hover:scale-105 hover:shadow-indigo-500/20">
+            <div className="aspect-video overflow-hidden">
+              <img
+                src="https://picsum.photos/600/400?random=21"
+                alt="Studio Work"
+                className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
+              />
             </div>
-            <h3 className="text-indigo-400 font-semibold text-xl mb-3">Artistic Heritage</h3>
-            <p className="text-gray-400">
-              Deeply influenced by Lene Helledie's artistic vision, bringing visual storytelling into musical performance.
-            </p>
+            <div className="p-6">
+              <h3 className="text-indigo-400 font-semibold text-xl mb-3">Studio Sessions</h3>
+              <p className="text-gray-400">
+                Creating unique soundscapes and remixes that blend artistic vision with musical innovation.
+              </p>
+            </div>
           </div>
 
-          <div className="bg-gradient-to-br from-purple-600/20 to-purple-700/10 rounded-xl p-6 backdrop-blur-sm border border-purple-600/20 transform transition-all duration-300 hover:scale-105 hover:shadow-purple-600/20">
-            <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center mb-4">
-              <Users className="w-6 h-6 text-white" />
+          <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-2xl overflow-hidden backdrop-blur-sm shadow-2xl transform transition-all duration-300 hover:scale-105 hover:shadow-purple-600/20">
+            <div className="aspect-video overflow-hidden">
+              <img
+                src="https://picsum.photos/600/400?random=22"
+                alt="Collaboration"
+                className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
+              />
             </div>
-            <h3 className="text-purple-400 font-semibold text-xl mb-3">Family Connection</h3>
-            <p className="text-gray-400">
-              Bridging generations through music, connecting Lene Helledie's art with his daughter's modern DJ style.
-            </p>
+            <div className="p-6">
+              <h3 className="text-purple-400 font-semibold text-xl mb-3">Artistic Collaborations</h3>
+              <p className="text-gray-400">
+                Bridging generations through collaborative works with Lene Helledie and emerging artists.
+              </p>
+            </div>
           </div>
+        </div>
+
+        {/* Event Booking Section */}
+        <div className="bg-gradient-to-r from-purple-600/20 to-indigo-600/20 rounded-2xl p-8 backdrop-blur-sm border border-purple-500/30 text-center mb-12">
+          <h3 className="text-2xl font-semibold text-purple-300 mb-4">Book DJ Ole Helledie for Your Event</h3>
+          <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
+            From intimate gallery openings to major festival stages, bring the unique sound that connects generations to your next event.
+          </p>
+          <a
+            href="https://example.com/booking"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-semibold px-8 py-4 rounded-full transform transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-purple-500/30"
+          >
+            Visit Booking Site
+            <ExternalLink className="w-5 h-5" />
+          </a>
         </div>
 
         {/* Quote Section */}
