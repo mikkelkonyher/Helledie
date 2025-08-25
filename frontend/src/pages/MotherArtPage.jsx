@@ -27,8 +27,8 @@ const MotherArtPage = () => {
 
       {/* Header */}
       <div className="text-center py-12 px-4">
-        <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-cyan-400 via-lime-400 to-blue-400 bg-clip-text text-transparent mb-4">
-          Mother's Art Gallery
+        <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-purple-400 via-indigo-400 to-purple-600 bg-clip-text text-transparent mb-4">
+          Lene Helledie Art Gallery
         </h1>
         <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto">
           Explore the beautiful artistic creations and masterpieces from DJ Ole Helledie's mother.
