@@ -31,7 +31,7 @@ const MotherArtPage = () => {
           Lene Helledie Art Gallery
         </h1>
         <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto">
-          Explore the beautiful artistic creations and masterpieces from DJ Ole Helledie's mother.
+          Explore the beautiful artistic creations and masterpieces from Lene Helledie.
           Each piece tells a unique story through color, form, and emotion.
         </p>
       </div>
