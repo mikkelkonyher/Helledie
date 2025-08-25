@@ -169,10 +169,10 @@ const LandingPage = () => {
                 </div>
               </div>
               <div className="absolute top-4 right-4">
-                <ExternalLink className="w-5 h-5 text-blue-400" />
+                <ExternalLink className="w-5 h-5 text-indigo-400" />
               </div>
               <div className="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-center">
-                <p className="text-blue-400 font-semibold">Daughter's DJ</p>
+                <p className="text-indigo-400 font-semibold">Daughter's DJ</p>
               </div>
             </a>
           </div>
