@@ -80,18 +80,9 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-gray-800 mt-6 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
-          <div className="flex items-center gap-4">
+        <div className="border-t border-gray-800 mt-6 pt-6 text-center">
+          <div className="text-sm text-gray-500">
             <span>&copy; 2025 DJ Ole Helledie. All rights reserved.</span>
-          </div>
-          
-          <div className="flex items-center gap-6">
-            <a href="#privacy" className="hover:text-purple-400 transition-colors duration-300">
-              Privacy Policy
-            </a>
-            <a href="#terms" className="hover:text-purple-400 transition-colors duration-300">
-              Terms of Service
-            </a>
           </div>
         </div>
 
