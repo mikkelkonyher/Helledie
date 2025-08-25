@@ -52,14 +52,46 @@ const LandingPage = () => {
             >
               {/* Mixer Panel */}
               <div className="absolute inset-4 bg-gradient-to-br from-gray-700 to-gray-800 rounded-xl shadow-inner p-6">
-                {/* Simple Center Logo/Icon */}
-                <div className="flex items-center justify-center h-full">
-                  <div className="w-24 h-24 bg-gradient-to-br from-indigo-600 to-purple-700 rounded-full shadow-lg flex items-center justify-center group-hover:shadow-indigo-500/30 transition-all duration-500">
-                    <div className="w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full flex items-center justify-center">
-                      <div className="text-white font-bold text-xl">DJ</div>
+                {/* DJ Logo */}
+                <div className="flex justify-center mb-4">
+                  <div className="w-16 h-16 bg-gradient-to-br from-indigo-600 to-purple-700 rounded-full shadow-lg flex items-center justify-center group-hover:shadow-indigo-500/30 transition-all duration-500">
+                    <div className="w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full flex items-center justify-center">
+                      <div className="text-white font-bold text-sm">DJ</div>
                     </div>
                   </div>
                 </div>
+                
+                {/* Faders/Sliders */}
+                <div className="grid grid-cols-3 gap-3 mb-4">
+                  {[...Array(3)].map((_, i) => (
+                    <div key={i} className="flex flex-col items-center">
+                      {/* Knob */}
+                      <div className="w-6 h-6 bg-gray-600 rounded-full shadow-inner mb-2 group-hover:bg-indigo-500 transition-colors duration-300"></div>
+                      {/* Fader Track */}
+                      <div className="w-2 h-16 bg-gray-600 rounded-full relative shadow-inner">
+                        <div 
+                          className="absolute w-4 h-3 bg-gradient-to-r from-indigo-400 to-purple-500 rounded shadow-lg group-hover:shadow-indigo-400/50 transition-all duration-300"
+                          style={{ 
+                            left: '-4px', 
+                            top: `${20 + (i * 15)}px`,
+                            transform: 'translateY(-50%)'
+                          }}
+                        ></div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                
+                {/* Bottom Controls */}
+                <div className="flex justify-center gap-2">
+                  {[...Array(2)].map((_, i) => (
+                    <div 
+                      key={i}
+                      className="w-4 h-4 bg-gray-600 rounded-full shadow-inner group-hover:bg-purple-500 transition-colors duration-300"
+                    ></div>
+                  ))}
+                </div>
+                
                 {/* Glow Effect */}
                 <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-indigo-500/0 via-indigo-500/20 to-indigo-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
