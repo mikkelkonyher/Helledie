@@ -8,7 +8,7 @@ const Navigation = () => {
 
     const navigationItems = [
         { name: "Forside", path: "/", internal: true },
-        { name: "Om", path: "/about", internal: true },
+        { name: "Ole Helledie", path: "/about", internal: true },
         { name: "Lene Helledie", path: "/mothers-art", internal: true },
         { name: "DJ Junior", path: "https://example.com/daughter-dj", internal: false }
     ];
