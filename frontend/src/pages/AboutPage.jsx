@@ -104,9 +104,9 @@ const AboutPage = () => {
         <div className="text-center mt-16 p-8 bg-gradient-to-r from-gray-800/30 to-gray-700/30 rounded-2xl backdrop-blur-sm">
           <blockquote className="text-2xl md:text-3xl font-light text-gray-300 italic mb-4">
             "Music is the language that connects us all – past, present, and future. Every beat I drop carries 
-            the artistic soul of my mother and the innovative spirit of my daughter."
+            the artistic soul of Lene and the innovative spirit of my daughter."
           </blockquote>
-          <cite className="text-lime-400 font-semibold">– DJ Ole Helledie</cite>
+          <cite className="text-indigo-400 font-semibold">– DJ Ole Helledie</cite>
         </div>
       </div>
     </div>
