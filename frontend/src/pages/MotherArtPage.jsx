@@ -62,8 +62,8 @@ const MotherArtPage = () => {
                   
                   {/* External Link Icon */}
                   <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <div className="bg-cyan-400 p-2 rounded-full">
-                      <ExternalLink className="w-4 h-4 text-black" />
+                    <div className="bg-purple-500 p-2 rounded-full">
+                      <ExternalLink className="w-4 h-4 text-white" />
                     </div>
                   </div>
 
