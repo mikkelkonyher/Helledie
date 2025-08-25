@@ -34,8 +34,8 @@ const LandingPage = () => {
               </div>
               {/* Label */}
               <div className="absolute -bottom-12 left-1/2 transform -translate-x-1/2 text-center">
-                <p className="text-cyan-400 font-semibold text-lg">Mother's Art</p>
-                <p className="text-gray-400 text-sm">Gallery</p>
+                <p className="text-purple-400 font-semibold text-lg">Lene Helledie</p>
+                <p className="text-gray-400 text-sm">Art Gallery</p>
               </div>
             </Link>
           </div>
