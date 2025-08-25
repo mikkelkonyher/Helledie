@@ -94,11 +94,11 @@ const LandingPage = () => {
               </div>
               {/* External Link Icon */}
               <div className="absolute top-4 right-4">
-                <ExternalLink className="w-6 h-6 text-blue-400" />
+                <ExternalLink className="w-6 h-6 text-indigo-400" />
               </div>
               {/* Label */}
               <div className="absolute -bottom-12 left-1/2 transform -translate-x-1/2 text-center">
-                <p className="text-blue-400 font-semibold text-lg">Daughter's DJ</p>
+                <p className="text-indigo-400 font-semibold text-lg">Daughter's DJ</p>
                 <p className="text-gray-400 text-sm">External Site</p>
               </div>
             </a>
