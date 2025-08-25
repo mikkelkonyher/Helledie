@@ -40,7 +40,7 @@ const AboutPage = () => {
       <div className="max-w-4xl mx-auto px-6 pb-16">
         {/* Main Story */}
         <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-2xl p-8 md:p-12 backdrop-blur-sm shadow-2xl mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-lime-400 mb-6">The Story Behind the Music</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-indigo-400 mb-6">The Story Behind the Music</h2>
           <div className="prose prose-lg text-gray-300 max-w-none">
             <p className="mb-6 leading-relaxed">
               DJ Ole Helledie is more than just a name in the music industry – he's a bridge between generations, 
