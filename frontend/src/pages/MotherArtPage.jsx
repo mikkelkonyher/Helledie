@@ -42,7 +42,7 @@ const MotherArtPage = () => {
           {artPieces.map((piece) => (
             <div
               key={piece.id}
-              className="group relative bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl shadow-2xl overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-cyan-400/20"
+              className="group relative bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl shadow-2xl overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-purple-500/20"
             >
               <a
                 href="https://example.com/mother-art"
