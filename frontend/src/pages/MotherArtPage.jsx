@@ -15,7 +15,7 @@ const MotherArtPage = () => {
         { id: 3, image: "https://lene.helledie.dk/wp-content/uploads/2025/04/akryl-03.jpg", title: "Color Symphony" },
         { id: 4, image: "https://lene.helledie.dk/wp-content/uploads/2025/04/papir-08.jpg", title: "Modern Expression" },
         { id: 5, image: "https://lene.helledie.dk/wp-content/uploads/2025/04/papir-10.jpg", title: "Vibrant Vision" },
-        { id: 6, image: "https://lene.helledie.dk/wp-content/uploads/2025/04/akryl-03.jpg", title: "Creative Flow" },
+        { id: 6, image: "https://lene.helledie.dk/wp-content/uploads/2025/04/akryl-04.jpg", title: "Creative Flow" },
     ];
 
     return (
@@ -36,11 +36,10 @@ const MotherArtPage = () => {
                 {/* Header */}
                 <div className="text-center py-12 px-4">
                     <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-purple-400 via-indigo-400 to-purple-600 bg-clip-text text-transparent mb-4">
-                        Lene Helledie Kunst
+                        {t('mother.header.title')}
                     </h1>
                     <p className="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto">
-                        At tage kampen op med den skønhed og kraft naturen har,
-                        er en vovet affære, men det er umuligt at lade være.
+                        {t('mother.header.subtitle')}
                     </p>
                 </div>
 
@@ -110,7 +109,7 @@ const MotherArtPage = () => {
                             rel="noopener noreferrer"
                             className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-semibold px-8 py-4 rounded-full transform transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-purple-500/30"
                         >
-                            Lene Helledie Kunstside
+                            {t('mother.cta.visit')}
                             <ExternalLink className="w-5 h-5" />
                         </a>
                     </div>

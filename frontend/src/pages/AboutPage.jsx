@@ -69,17 +69,9 @@ const AboutPage = () => {
                         <h2 className="text-3xl md:text-4xl font-bold text-indigo-400 mb-6">{t('about.story.title')}</h2>
                         <div className="prose prose-lg text-gray-300 max-w-none">
                             <p className="mb-6 leading-relaxed">
-                                Ole Helledie er den DJ, du får, når du blander en kunstnerisk mor, en DJ-datter og en flok Mercantec-elever, der konstant presser ham til at være bedre. Resultatet? Musik, events og historier, der ikke altid giver mening – men som altid får folk til at danse.
+                                {t('about.story.text')}
                             </p>
-                            <p className="mb-6 leading-relaxed">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, urna eu tincidunt consectetur, nisi nisl aliquam eros, vitae dictum enim sapien nec enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                            </p>
-                            <p className="mb-6 leading-relaxed">
-                                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer ac sem euismod, dictum erat at, cursus enim. Suspendisse potenti. Etiam euismod, justo nec facilisis cursus, enim erat dictum urna, nec dictum enim sapien nec enim.
-                            </p>
-                            <p className="leading-relaxed">
-                                Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien.
-                            </p>
+
                         </div>
                     </div>
 
