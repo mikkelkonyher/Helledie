@@ -18,7 +18,7 @@ const MotherArtPage = () => {
       <nav className="p-6">
         <Link
           to="/"
-          className="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors duration-300"
+          className="inline-flex items-center gap-2 text-purple-400 hover:text-purple-300 transition-colors duration-300"
         >
           <ArrowLeft className="w-5 h-5" />
           Back to DJ Table
