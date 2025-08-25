@@ -21,8 +21,8 @@ const LandingPage = () => {
                 <div className="absolute inset-4 rounded-full overflow-hidden">
                   <img
                     src="https://picsum.photos/600/600?random=10"
-                    alt="Mother's Art Turntable"
-                    className="w-full h-full object-cover rounded-full group-hover:animate-spin transition-all duration-1000"
+                    alt="Lene Helledie Turntable"
+                    className="w-full h-full object-cover rounded-full group-hover:rotate-12 transition-all duration-700"
                   />
                   {/* Center Hole */}
                   <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-gray-900 rounded-full shadow-lg">
