@@ -31,7 +31,7 @@ const LandingPage = () => {
                                 <div className="absolute inset-8 rounded-full bg-gradient-to-br from-gray-700 to-gray-800 shadow-inner">
                                     <div className="absolute inset-8 rounded-full overflow-hidden">
                                         <img
-                                            src="/assets/ole/480952256_3076331369171649_5175806130906190233_n.jpg"
+                                            src="/assets/ole/8A2578A5-D5EC-48BC-A57A-2337C04C9A1A.JPG"
                                             alt="Ole Helledie's DJ Turntable"
                                             className="w-full h-full object-cover rounded-full group-hover:animate-spin transition-all duration-1000"
                                         />
