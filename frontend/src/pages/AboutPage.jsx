@@ -9,7 +9,7 @@ const AboutPage = () => {
       <nav className="p-6">
         <Link
           to="/"
-          className="inline-flex items-center gap-2 text-lime-400 hover:text-lime-300 transition-colors duration-300"
+          className="inline-flex items-center gap-2 text-indigo-400 hover:text-indigo-300 transition-colors duration-300"
         >
           <ArrowLeft className="w-5 h-5" />
           Back to DJ Table
