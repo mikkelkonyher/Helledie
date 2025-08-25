@@ -1,7 +1,10 @@
 import React from "react";
 import { Instagram, Facebook, Linkedin, Mail, ExternalLink } from "lucide-react";
+import { useI18n } from "../lib/i18n";
 
 const Footer = () => {
+    const { t } = useI18n();
+
     const socialLinks = [
         {
             name: "Instagram",
@@ -32,10 +35,10 @@ const Footer = () => {
                     {/* Logo/Name Section */}
                     <div className="text-center md:text-left">
                         <h3 className="text-xl font-bold bg-gradient-to-r from-purple-400 to-indigo-400 bg-clip-text text-transparent mb-2">
-                            DJ Ole Helledie
+                            {t('footer.title')}
                         </h3>
                         <p className="text-gray-400 text-sm">
-                            Forbinder generationer
+                            {t('footer.tagline')}
                         </p>
                     </div>
 
@@ -70,7 +73,7 @@ const Footer = () => {
                             </a>
                         </div>
                         <p className="text-xs text-gray-500 mt-1">
-                            Til booking og henvendelser
+                            {t('footer.email.note')}
                         </p>
                     </div>
                 </div>

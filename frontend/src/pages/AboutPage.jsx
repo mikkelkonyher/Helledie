@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, ExternalLink } from "lucide-react";
 import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
+import { useI18n } from "../lib/i18n";
 
 const featureImages = [
     {
@@ -24,6 +25,7 @@ const featureImages = [
 
 const AboutPage = () => {
     const [modalImg, setModalImg] = useState(null);
+    const { t } = useI18n();
 
     return (
         <div className="flex flex-col min-h-screen">
@@ -36,7 +38,7 @@ const AboutPage = () => {
                         className="inline-flex items-center gap-2 text-indigo-400 hover:text-indigo-300 transition-colors duration-300"
                     >
                         <ArrowLeft className="w-5 h-5" />
-                        Back to DJ Table
+                        {t('about.back')}
                     </Link>
                 </nav>
 
@@ -51,10 +53,10 @@ const AboutPage = () => {
                     <div className="absolute inset-0 flex items-center justify-center">
                         <div className="text-center">
                             <h1 className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-purple-400 via-indigo-400 to-purple-600 bg-clip-text text-transparent mb-4">
-                                DJ OLE HELLEDIE
+                                {t('about.hero.title')}
                             </h1>
                             <p className="text-gray-300 text-xl md:text-2xl">
-                                Forbinder generationer gennem musik og kunst
+                                {t('about.hero.subtitle')}
                             </p>
                         </div>
                     </div>
@@ -64,7 +66,7 @@ const AboutPage = () => {
                 <div className="max-w-4xl mx-auto px-6 pb-16">
                     {/* Main Story */}
                     <div className="bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-2xl p-8 md:p-12 backdrop-blur-sm shadow-2xl mb-12">
-                        <h2 className="text-3xl md:text-4xl font-bold text-indigo-400 mb-6">Historien bag musikken</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold text-indigo-400 mb-6">{t('about.story.title')}</h2>
                         <div className="prose prose-lg text-gray-300 max-w-none">
                             <p className="mb-6 leading-relaxed">
                                 Ole Helledie er den DJ, du får, når du blander en kunstnerisk mor, en DJ-datter og en flok Mercantec-elever, der konstant presser ham til at være bedre. Resultatet? Musik, events og historier, der ikke altid giver mening – men som altid får folk til at danse.
@@ -109,9 +111,9 @@ const AboutPage = () => {
 
                     {/* Event Booking Section */}
                     <div className="bg-gradient-to-r from-purple-600/20 to-indigo-600/20 rounded-2xl p-8 backdrop-blur-sm border border-purple-500/30 text-center mb-12">
-                        <h3 className="text-2xl font-semibold text-purple-300 mb-4">Book DJ Ole Helledie til dit næste event</h3>
+                        <h3 className="text-2xl font-semibold text-purple-300 mb-4">{t('about.booking.title')}</h3>
                         <p className="text-gray-300 mb-6 max-w-2xl mx-auto">
-                            Fra intime gallerier til store festivaler – få den unikke lyd, der forbinder generationer, med til din næste fest.
+                            {t('about.booking.text')}
                         </p>
                         <a
                             href="https://example.com/booking"
@@ -119,7 +121,7 @@ const AboutPage = () => {
                             rel="noopener noreferrer"
                             className="inline-flex items-center gap-3 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-500 hover:to-indigo-500 text-white font-semibold px-8 py-4 rounded-full transform transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-purple-500/30"
                         >
-                            Besøg bookingsiden
+                            {t('about.booking.btn')}
                             <ExternalLink className="w-5 h-5" />
                         </a>
                     </div>
@@ -127,7 +129,7 @@ const AboutPage = () => {
                     {/* Quote Section */}
                     <div className="text-center mt-16 p-8 bg-gradient-to-r from-gray-800/30 to-gray-700/30 rounded-2xl backdrop-blur-sm">
                         <blockquote className="text-2xl md:text-3xl font-light text-gray-300 italic mb-4">
-                            "Hvis du spørger mig, hvem der holder festen kørende… så er svaret Mercantec-eleverne."
+                            {t('about.quote')}
                         </blockquote>
                         <cite className="text-indigo-400 font-semibold">– DJ Ole Helledie</cite>
                     </div>

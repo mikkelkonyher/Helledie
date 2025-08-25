@@ -3,9 +3,11 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, ExternalLink } from "lucide-react";
 import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
+import { useI18n } from "../lib/i18n";
 
 const MotherArtPage = () => {
     const [modalImg, setModalImg] = useState(null);
+    const { t } = useI18n();
 
     const artPieces = [
         { id: 1, image: "https://lene.helledie.dk/wp-content/uploads/2020/08/fra-Galleri-Grenen-1l.jpg", title: "Abstract Harmony" },
@@ -27,7 +29,7 @@ const MotherArtPage = () => {
                         className="inline-flex items-center gap-2 text-purple-400 hover:text-purple-300 transition-colors duration-300"
                     >
                         <ArrowLeft className="w-5 h-5" />
-                        Back to DJ Table
+                        {t('mother.back')}
                     </Link>
                 </nav>
 

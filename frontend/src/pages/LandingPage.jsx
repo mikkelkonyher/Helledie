@@ -2,8 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import Navigation from "../components/Navigation";
+import { useI18n } from "../lib/i18n";
 
 const LandingPage = () => {
+    const { t } = useI18n();
     return (
         <div className="flex flex-col min-h-screen">
             <Navigation />
@@ -11,10 +13,10 @@ const LandingPage = () => {
             {/* Main Title */}
             <div className="text-center mt-16">
                 <h1 className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-purple-400 via-indigo-400 to-purple-600 bg-clip-text text-transparent mb-4">
-                 HELLEDIE
+                 {t('landing.title')}
                 </h1>
                 <p className="text-gray-400 text-lg md:text-xl">
-                    DJ • Kunst • Events
+                    {t('landing.subtitle')}
                 </p>
             </div>
             <div className="flex-grow bg-gradient-to-br from-gray-900 via-gray-800 to-black flex items-center justify-center p-4">
@@ -43,7 +45,7 @@ const LandingPage = () => {
                                 </div>
                                 <div className="absolute -bottom-14 left-1/2 transform -translate-x-1/2 text-center">
                                     <p className="text-indigo-400 font-semibold text-xl">Ole Helledie</p>
-                                    <p className="text-gray-400 text-base">DJ</p>
+                                    <p className="text-gray-400 text-base">{t('landing.ole.role')}</p>
                                 </div>
                             </Link>
                         </div>
@@ -85,8 +87,8 @@ const LandingPage = () => {
                                     <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-indigo-500/0 via-indigo-500/20 to-indigo-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                                 </div>
                                 <div className="absolute -bottom-14 left-1/2 transform -translate-x-1/2 text-center">
-                                    <p className="text-indigo-400 font-semibold text-xl">DJ Junior</p>
-                                    <p className="text-gray-400 text-base">Young gun Helledie</p>
+                                    <p className="text-indigo-400 font-semibold text-xl">{t('landing.djJunior.name')}</p>
+                                    <p className="text-gray-400 text-base">{t('landing.djJunior.tagline')}</p>
                                 </div>
                             </a>
                         </div>
@@ -112,7 +114,7 @@ const LandingPage = () => {
                                 </div>
                                 <div className="absolute -bottom-14 left-1/2 transform -translate-x-1/2 text-center">
                                     <p className="text-purple-400 font-semibold text-xl">Lene Helledie</p>
-                                    <p className="text-gray-400 text-base">Kunst</p>
+                                    <p className="text-gray-400 text-base">{t('landing.lene.role')}</p>
                                 </div>
                             </Link>
                         </div>
@@ -173,7 +175,7 @@ const LandingPage = () => {
                                     </div>
                                 </div>
                                 <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 text-center">
-                                    <p className="text-indigo-400 font-semibold text-lg">DJ Helledie Junior</p>
+                                    <p className="text-indigo-400 font-semibold text-lg">{t('landing.djJunior.name')}</p>
                                 </div>
                             </a>
                         </div>
