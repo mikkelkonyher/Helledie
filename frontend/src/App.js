@@ -7,13 +7,15 @@ import AboutPage from "./pages/AboutPage";
 
 function App() {
   return (
-    <div className="App min-h-screen bg-gray-900">
+    <div className="App min-h-screen bg-gray-900 flex flex-col">
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/mothers-art" element={<MotherArtPage />} />
-          <Route path="/about" element={<AboutPage />} />
-        </Routes>
+        <div className="flex-grow">
+          <Routes>
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/mothers-art" element={<MotherArtPage />} />
+            <Route path="/about" element={<AboutPage />} />
+          </Routes>
+        </div>
       </BrowserRouter>
     </div>
   );
