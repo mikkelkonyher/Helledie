@@ -98,6 +98,7 @@ const MotherArtPage = () => {
       </div>
 
       <Footer />
+      </div>
     </div>
   );
 };
