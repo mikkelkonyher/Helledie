@@ -79,21 +79,21 @@ const AboutPage = () => {
             </p>
           </div>
 
-          <div className="bg-gradient-to-br from-lime-500/20 to-lime-600/10 rounded-xl p-6 backdrop-blur-sm border border-lime-500/20 transform transition-all duration-300 hover:scale-105 hover:shadow-lime-400/20">
-            <div className="w-12 h-12 bg-lime-400 rounded-full flex items-center justify-center mb-4">
-              <Heart className="w-6 h-6 text-black" />
+          <div className="bg-gradient-to-br from-indigo-500/20 to-indigo-600/10 rounded-xl p-6 backdrop-blur-sm border border-indigo-500/20 transform transition-all duration-300 hover:scale-105 hover:shadow-indigo-500/20">
+            <div className="w-12 h-12 bg-indigo-500 rounded-full flex items-center justify-center mb-4">
+              <Heart className="w-6 h-6 text-white" />
             </div>
-            <h3 className="text-lime-400 font-semibold text-xl mb-3">Artistic Heritage</h3>
+            <h3 className="text-indigo-400 font-semibold text-xl mb-3">Artistic Heritage</h3>
             <p className="text-gray-400">
-              Deeply influenced by his mother's artistic vision, bringing visual storytelling into musical performance.
+              Deeply influenced by Lene Helledie's artistic vision, bringing visual storytelling into musical performance.
             </p>
           </div>
 
-          <div className="bg-gradient-to-br from-blue-500/20 to-blue-600/10 rounded-xl p-6 backdrop-blur-sm border border-blue-500/20 transform transition-all duration-300 hover:scale-105 hover:shadow-blue-400/20">
-            <div className="w-12 h-12 bg-blue-400 rounded-full flex items-center justify-center mb-4">
-              <Users className="w-6 h-6 text-black" />
+          <div className="bg-gradient-to-br from-purple-600/20 to-purple-700/10 rounded-xl p-6 backdrop-blur-sm border border-purple-600/20 transform transition-all duration-300 hover:scale-105 hover:shadow-purple-600/20">
+            <div className="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center mb-4">
+              <Users className="w-6 h-6 text-white" />
             </div>
-            <h3 className="text-blue-400 font-semibold text-xl mb-3">Family Connection</h3>
+            <h3 className="text-purple-400 font-semibold text-xl mb-3">Family Connection</h3>
             <p className="text-gray-400">
               Bridging generations through music, connecting his mother's art with his daughter's modern DJ style.
             </p>
