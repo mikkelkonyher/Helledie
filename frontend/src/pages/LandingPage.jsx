@@ -44,34 +44,24 @@ const LandingPage = () => {
           <div className="relative group">
             <Link
               to="/about"
-              className="block relative w-64 h-80 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl shadow-2xl transform transition-all duration-500 hover:scale-105 hover:shadow-lime-400/20"
+              className="block relative w-64 h-80 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl shadow-2xl transform transition-all duration-500 hover:scale-105 hover:shadow-indigo-500/20"
             >
               {/* Mixer Panel */}
               <div className="absolute inset-4 bg-gradient-to-br from-gray-700 to-gray-800 rounded-xl shadow-inner p-6">
-                <img
-                  src="https://picsum.photos/400/400?random=12"
-                  alt="DJ Mixer"
-                  className="w-full h-32 object-cover rounded-lg mb-4"
-                />
-                {/* Control Knobs */}
-                <div className="grid grid-cols-3 gap-3 mb-4">
-                  {[...Array(6)].map((_, i) => (
-                    <div
-                      key={i}
-                      className="w-8 h-8 bg-gray-600 rounded-full shadow-inner group-hover:bg-lime-400 transition-colors duration-300"
-                    ></div>
-                  ))}
-                </div>
-                {/* Slider */}
-                <div className="h-16 bg-gray-600 rounded-lg relative overflow-hidden">
-                  <div className="absolute top-2 left-1/2 transform -translate-x-1/2 w-8 h-12 bg-lime-400 rounded shadow-lg group-hover:animate-pulse"></div>
+                {/* Simple Center Logo/Icon */}
+                <div className="flex items-center justify-center h-full">
+                  <div className="w-24 h-24 bg-gradient-to-br from-indigo-600 to-purple-700 rounded-full shadow-lg flex items-center justify-center group-hover:shadow-indigo-500/30 transition-all duration-500">
+                    <div className="w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full flex items-center justify-center">
+                      <div className="text-white font-bold text-xl">DJ</div>
+                    </div>
+                  </div>
                 </div>
                 {/* Glow Effect */}
-                <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-lime-400/0 via-lime-400/20 to-lime-400/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-indigo-500/0 via-indigo-500/20 to-indigo-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               </div>
               {/* Label */}
               <div className="absolute -bottom-12 left-1/2 transform -translate-x-1/2 text-center">
-                <p className="text-lime-400 font-semibold text-lg">About</p>
+                <p className="text-indigo-400 font-semibold text-lg">About</p>
                 <p className="text-gray-400 text-sm">DJ Ole Helledie</p>
               </div>
             </Link>
