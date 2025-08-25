@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { ArrowLeft, ExternalLink } from "lucide-react";
+import Footer from "../components/Footer";
 
 const MotherArtPage = () => {
   const artPieces = [
