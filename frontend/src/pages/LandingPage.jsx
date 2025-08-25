@@ -176,8 +176,8 @@ const LandingPage = () => {
                 {/* Mobile DJ Controls */}
                 <div className="flex flex-col items-center h-full justify-center gap-3">
                   {/* DJ Logo */}
-                  <div className="w-12 h-12 bg-gradient-to-br from-indigo-600 to-purple-700 rounded-full shadow-lg flex items-center justify-center">
-                    <div className="text-white font-bold text-xs">DJ</div>
+                  <div className="w-12 h-12 bg-gradient-to-br from-gray-900 to-black rounded border border-indigo-400/40 shadow-lg flex items-center justify-center">
+                    <div className="text-indigo-300 font-light text-xs tracking-wide" style={{ fontFamily: 'serif' }}>OLE</div>
                   </div>
                   
                   {/* Mini Faders */}
