@@ -95,7 +95,7 @@ const AboutPage = () => {
             </div>
             <h3 className="text-purple-400 font-semibold text-xl mb-3">Family Connection</h3>
             <p className="text-gray-400">
-              Bridging generations through music, connecting his mother's art with his daughter's modern DJ style.
+              Bridging generations through music, connecting Lene Helledie's art with his daughter's modern DJ style.
             </p>
           </div>
         </div>
