@@ -110,6 +110,8 @@ const AboutPage = () => {
           <cite className="text-indigo-400 font-semibold">– DJ Ole Helledie</cite>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 };
