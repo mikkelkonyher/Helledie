@@ -173,9 +173,28 @@ const LandingPage = () => {
               className="block relative w-48 h-64 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl shadow-2xl transform transition-all duration-500 hover:scale-105 hover:shadow-indigo-500/20"
             >
               <div className="absolute inset-4 bg-gradient-to-br from-gray-700 to-gray-800 rounded-xl shadow-inner p-4">
-                <div className="flex items-center justify-center h-full">
-                  <div className="w-16 h-16 bg-gradient-to-br from-indigo-600 to-purple-700 rounded-full shadow-lg flex items-center justify-center">
-                    <div className="text-white font-bold text-sm">DJ</div>
+                {/* Mobile DJ Controls */}
+                <div className="flex flex-col items-center h-full justify-center gap-3">
+                  {/* DJ Logo */}
+                  <div className="w-12 h-12 bg-gradient-to-br from-indigo-600 to-purple-700 rounded-full shadow-lg flex items-center justify-center">
+                    <div className="text-white font-bold text-xs">DJ</div>
+                  </div>
+                  
+                  {/* Mini Faders */}
+                  <div className="flex gap-2">
+                    {[...Array(3)].map((_, i) => (
+                      <div key={i} className="flex flex-col items-center">
+                        <div className="w-1 h-12 bg-gray-600 rounded-full relative shadow-inner">
+                          <div 
+                            className="absolute w-2 h-2 bg-indigo-400 rounded shadow"
+                            style={{ 
+                              left: '-2px', 
+                              top: `${8 + (i * 4)}px`,
+                            }}
+                          ></div>
+                        </div>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>
